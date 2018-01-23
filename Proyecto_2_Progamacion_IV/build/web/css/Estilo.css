@@ -1,0 +1,196 @@
+@charset "utf-8";
+.calendar {
+  width: 200px;
+  background: gray;
+  background-repeat: no-repeat;
+  background-position:center;
+  border: 1px solid #CFC7A6;
+  cursor: pointer;
+  position: absolute;
+}
+.calendar * {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+}
+.calendar thead { 
+  color: white;
+}
+.calendar thead a {
+  color: white;
+  text-decoration: none;
+}
+.calendar thead a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.calendar .weekdays {
+  line-height: 1.0em;
+   border: 0px;
+}
+.calendar td {
+  border: 1px solid #CFC7A6;
+}
+
+.titulo{
+    font-family:Book Antiqua;
+    height:60px;
+    display: inline-block;
+    align-items: center;
+    justify-content: start;
+    font-size:35px;
+    font-weight:700;
+    color:white;
+    margin-left:5px;
+}
+
+.div_enlaces{
+    height:60px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+    float:right;
+}
+
+.cod_nombre_usuario{
+    font-family:Book Antiqua;
+    font-size:15px;
+    font-weight:700;
+    color:white;
+}
+.Boton{
+border-width:1px;
+border-style:groove;
+text-align:center;
+font-weight:bold;
+font-size:12pt;
+font-family:Times New Roman;
+background-color:#034E4B;
+color:white;
+}
+
+.Boton2{
+border-width:1px;
+border-style:groove;
+text-align:center;
+font-weight:bold;
+font-size:12pt;
+font-family:Times New Roman;
+background-color:#F4660E;
+color:white;
+}
+
+.error {
+	border-bottom-color:red;
+	border-top-color:red;
+	border-left-color:red;
+	border-right-color:red;
+}
+
+.popup {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 25%;
+	height: 30%;
+	padding: 16px;
+	border: 10px solid lightgray;
+	background-color: white;
+	z-index:1002;
+        font-family:Century Gothic;
+        color: #030849;
+        font-size:17pt;
+	overflow: auto;
+}
+
+.tabladecitas{
+    font-size:20px;
+    background-color: #EEEEFF;
+}
+
+.tabladecitas tr{
+    font-family: Book Antiqua
+}
+
+.busquedadepaciente {
+    font-size:19px;
+}
+
+.busquedadepaciente img{
+    cursor:pointer;
+    width:30px;
+    height:30px;
+}
+
+#busquedadepaciente{
+    width:50%;
+    height:25px;
+    font-family:Book Antiqua;
+    font-size:15px;
+}
+
+#sinresultados{
+    display: none;
+}
+
+.overlay{
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	opacity:.50;
+}
+
+.popuppaciente{
+	display: none;
+	position: fixed;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	border: 10px solid #ddddff;
+	z-index:1002;
+	overflow: auto;
+	background-image: url("../imagenes/popupbackground.png");
+        font-size: 16px;
+}
+
+.popuppaciente img {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.encabezado{
+	color:white;
+	background-color: black;
+}
+
+TABLE.GRID {
+    width: 100%;
+    text-align: center;
+}
+
+TABLE.GRID, TABLE.GRID TR TH, TABLE.GRID TR TD {
+    border:1px solid black;
+}
+
+TABLE.GRID {
+    border-collapse: collapse;
+}
+
+TABLE.GRID TR TH {
+    background: #6496c8;
+    color:white;
+}
+
+TABLE.GRID TR TD {
+    background: white;
+}

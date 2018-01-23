@@ -1,0 +1,11 @@
+<div id="subheader" style="height:60px;background:#6496c8;">
+        <div id="logo" class="titulo">
+                Opciones:
+        </div>
+        <div id="opciones" style="display:inline-block;">
+                <ul class="menu">
+                        <li><a href="../jsp/Listado_Citas.jsp" title="Listar citas">Listar citas</a></li>
+                        <li><a href="../jsp/Agregar_Cita.jsp" title="Agregar nueva cita">Agregar cita</a></li>
+                </ul> 
+            </div>
+</div>

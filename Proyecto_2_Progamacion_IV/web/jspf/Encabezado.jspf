@@ -1,0 +1,58 @@
+
+<%@ page import="proyecto.modelo.Usuario" %>
+<%@ page import="proyecto.modelo.Medico" %>
+<%@ page import="proyecto.modelo.Paciente" %>
+<%@ page import="proyecto.modelo.Administrador" %>
+<%@ page errorPage="../jsp/ErrorSeguridad.jsp" %>
+<link rel="stylesheet" title="Basico" type="text/css" href="../css/Estilo.css">
+<div id="header" style="line-height:60px;  background:#0099cc;">
+    <div id="logo" class="titulo">
+            Sistema de UNA clinica \(^o^)/
+    </div>
+    <div id="links" class="div_enlaces">   
+        
+    <% Usuario user = (Usuario) request.getSession().getAttribute("user"); %>
+
+        <% if (user==null){%>        
+            <div id="login"> 
+                    <a href="Login.jsp" title="Login">
+                            <div style="width: 40px; height:40px; background-image: url(../imagenes/login.png); background-repeat: no-repeat; background-size:contain;"></div>
+                    </a>
+            </div>
+        <%}%> 
+        
+         <%   if (user!=null){%>
+            <div id="user" style="font-family:Book Antiqua; font-size:25px; font-weight:500; color:white;">
+                <%=user.getId()%>
+            </div> 
+            <% if(user.getTipo()==1){ %>
+                <div id="medico" style="font-family:Book Antiqua; font-size:15px; font-weight:500; color:white;">
+                &nbsp;    <%=( (Medico) request.getSession().getAttribute("medico")).getNombre() %>
+                </div> 
+            <%}%>
+             <% if(user.getTipo()==2){ %>
+                <div id="paciente" style="font-family:Book Antiqua; font-size:15px; font-weight:500; color:white;">
+                  &nbsp; <%=( (Paciente) request.getSession().getAttribute("paciente")).getNombre() %>
+                </div> 
+            <%}%>
+              <% if(user.getTipo()==3){ // Administrador %>
+                <div id="client" style="font-family:Book Antiqua; font-size:15px; font-weight:500; color:white;">
+                  &nbsp;  Administrador
+                </div> 
+            <%}%>
+            <div id="logout" onclick="logout();return false;" style=""> 
+                    <a href="" title="Logout">
+                            <div style="width: 30px; height:30px;  background-image: url(../imagenes/logout.png); background-repeat: no-repeat; background-size:contain;"></div>
+                    </a>
+            </div>
+        <%}%>
+    </div>
+</div>
+<script>
+    function logout(){
+           Proxy.userLogout(
+                function(){
+                    document.location="/Proyecto_2_Progamacion_IV/jsp/Login.jsp";
+               });
+}
+</script>

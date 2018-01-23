@@ -1,0 +1,36 @@
+@charset "utf-8";
+.calendar {
+  width: 200px;
+  background: #5882fa;
+  background-image: url(../imagenes/ico/Sira.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  border: 1px solid #CFC7A6;
+  cursor: pointer;
+  position: absolute;
+}
+.calendar * {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+}
+.calendar thead { 
+	background-image: url(../imagenes/menubgover.gif);
+  color: #fff;
+}
+.calendar thead a {
+  color: #fff;
+  text-decoration: none;
+}
+.calendar thead a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.calendar .weekdays {
+  line-height: 1.0em;
+   border: 0px;
+}
+.calendar td {
+  border: 1px solid #CFC7A6;
+}
+

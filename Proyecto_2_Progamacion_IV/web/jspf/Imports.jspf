@@ -1,0 +1,22 @@
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="../js/Palabra.js"></script> 
+<script type="text/javascript" src="../js/Proxy.js"></script>
+<script type="text/javascript" src="../js/Usuario.js"></script>   
+<script type="text/javascript" src="../js/Medico.js"></script>   
+<script type="text/javascript" src="../js/BaseDatos.js"></script>
+<script type="text/javascript" src="../js/Paciente.js"></script>
+<script type="text/javascript" src="../js/Tabla.js"></script> 
+<script type="text/javascript" src="../js/TablaPaciente.js"></script> 
+<script type="text/javascript" src="../js/Calendario.js"></script>
+<script type="text/javascript" src="../js/Utils.js"></script>
+<script type="text/javascript" src="../js/Lista.js"></script>
+<script type="text/javascript" src="../js/Cita.js"></script>
+<script type="text/javascript" src="../js/Observacion.js"></script>
+<script type="text/javascript" src="../js/Calendar.js"></script>
+<script type="text/javascript" src="../js/Funciones_globales.js"></script>
+<link rel="stylesheet" title="Basico" type="text/css" href="../css/Estilo.css">
+<link rel="stylesheet" title="Basico" type="text/css" href="../css/Menu.css">
